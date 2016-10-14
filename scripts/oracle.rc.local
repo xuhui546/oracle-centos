@@ -1,0 +1,16 @@
+curlftpfs ftp://xh:6RltBMEGfcOZ@192.168.81.126 /mnt/backup
+
+sudo -u oracle bash << INSTALLLISTENER
+    . /home/oracle/.bashrc
+    export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/tg_1
+    $GATEWAYS_HOME/bin/lsnrctl stop
+    $GATEWAYS_HOME/bin/lsnrctl start
+
+    export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/dbhome_1
+    $ORACLE_HOME/bin/lsnrctl stop
+    $ORACLE_HOME/bin/lsnrctl start
+    echo 'startup force;' | sqlplus / as sysdba
+INSTALLLISTENER
+
+/bin/bash
+exit 0

@@ -1,0 +1,19 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Oracle Settings
+TMP=/tmp; export TMP
+TMPDIR=\$TMP; export TMPDIR
+# DISPLAY=localhost:0.0; export DISPLAY
+ORACLE_HOSTNAME=$HOSTNAME; export ORACLE_HOSTNAME
+ORACLE_SID=$ORACLE_SID; export ORACLE_SID
+ORACLE_UNQNAME=\$ORACLE_SID; export ORACLE_UNQNAME
+ORACLE_BASE=$ORACLE_BASE; export ORACLE_BASE
+ORACLE_HOME=$ORACLE_HOME; export ORACLE_HOME
+PATH=/usr/sbin:\$PATH; export PATH
+PATH=\$ORACLE_HOME/bin:\$PATH; export PATH
+LD_LIBRARY_PATH=\$ORACLE_HOME/lib:/lib:/usr/lib:/usr/lib64; export LD_LIBRARY_PATH
+CLASSPATH=\$ORACLE_HOME/jlib:\$ORACLE_HOME/rdbms/jlib; export CLASSPATH
+
