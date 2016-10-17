@@ -194,7 +194,7 @@ NEXT_SESSION_RESPONSE=<Value Unspecified>
 #Description: List of components to be deinstalled during a deinstall session.
 #Example    : DEINSTALL_LIST = {"oracle.tg","11.2.0.1.0"}
 #------------------------------------------------------------------------------
-DEINSTALL_LIST={"oracle.tg","11.2.0.1.0"}
+DEINSTALL_LIST={\"oracle.tg\",\"11.2.0.1.0\"}
 
 #------------------------------------------------------------------------------
 #Name       : SHOW_DEINSTALL_CONFIRMATION
@@ -229,7 +229,7 @@ CLUSTER_NODES={}
 #Description: The top level component to be installed in the current session.
 #Example    : TOPLEVEL_COMPONENT = {"oracle.tg","11.2.0.1.0"}
 #------------------------------------------------------------------------------
-TOPLEVEL_COMPONENT={"oracle.tg","11.2.0.1.0"}
+TOPLEVEL_COMPONENT={\"oracle.tg\",\"11.2.0.1.0\"}
 
 #------------------------------------------------------------------------------
 #Name       : SHOW_SPLASH_SCREEN
@@ -295,7 +295,7 @@ SHOW_SPLASH_SCREEN=false
 #
 #Example    : COMPONENT_LANGUAGES = {"en"}
 #------------------------------------------------------------------------------
-COMPONENT_LANGUAGES={"en"}
+COMPONENT_LANGUAGES={\"en\"}
 
 #------------------------------------------------------------------------------
 #Name       : INSTALL_TYPE
@@ -303,7 +303,7 @@ COMPONENT_LANGUAGES={"en"}
 #Description: Installation type of the component.
 #Component  : oracle.tg
 #------------------------------------------------------------------------------
-INSTALL_TYPE="Custom"
+INSTALL_TYPE=\"Custom\"
 
 #------------------------------------------------------------------------------
 #Name       : DEPENDENCY_LIST

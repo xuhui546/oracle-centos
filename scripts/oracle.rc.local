@@ -1,3 +1,4 @@
+mkdir -p /mnt/backup
 curlftpfs ftp://xh:6RltBMEGfcOZ@192.168.81.126 /mnt/backup
 
 sudo -u oracle bash << INSTALLLISTENER
